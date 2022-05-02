@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select with search</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+<button class="btn btn-success">Test</button>
+<button class="btn btn-primary">Test</button>
+<button class="btn btn-warning">Test</button>
+<button class="btn btn-danger">Test</button>
+<button class="btn btn-light">Test</button>
+<button class="btn btn-dark">Test</button>
+
+<div class="row">
+	<div class="col-md-8">
+		
+		<form>
+			<div class="mb-3">
+			<label for="validationTextarea">Textarea</label>
+			<textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+			<div class="invalid-feedback">
+			  Please enter a message in the textarea.
+			</div>
+			</div>
+
+			<div class="custom-control custom-checkbox mb-3">
+			<input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+			<label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+			<div class="invalid-feedback">Example invalid feedback text</div>
+			</div>
+
+			<div class="custom-control custom-radio">
+			<input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+			<label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+			</div>
+			<div class="custom-control custom-radio mb-3">
+			<input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+			<label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+			<div class="invalid-feedback">More example invalid feedback text</div>
+			</div>
+
+			<div class="mb-3">
+			<select class="custom-select" required>
+			  <option value="">Choose...</option>
+			  <option value="1">One</option>
+			  <option value="2">Two</option>
+			  <option value="3">Three</option>
+			</select>
+			<div class="invalid-feedback">Example invalid custom select feedback</div>
+			</div>
+
+			<div class="custom-file mb-3">
+			<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+			<label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+			<div class="invalid-feedback">Example invalid custom file feedback</div>
+			</div>
+
+			<div class="mb-3">
+			<div class="input-group">
+			  <div class="input-group-prepend">
+			    <label class="input-group-text" for="validatedInputGroupSelect">Options</label>
+			  </div>
+			  <select class="custom-select" id="validatedInputGroupSelect" required>
+			    <option value="">Choose...</option>
+			    <option value="1">One</option>
+			    <option value="2">Two</option>
+			    <option value="3">Three</option>
+			  </select>
+			</div>
+			<div class="invalid-feedback">
+			  Example invalid input group feedback
+			</div>
+			</div>
+
+			<div class="col-md-6 mb-3">
+		      <label for="validationDefault02">Last name</label>
+		      <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+		      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		    </div>
+
+		        <div class="col-md-6 mb-3">
+			      <label for="validationServer02">Last name</label>
+			      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+			      <div class="valid-feedback">
+			        Looks good!
+			      </div>
+			    </div>
+			  </div>
+			    <div class="col-md-6 mb-3">
+			      <label for="validationServer03">City</label>
+			      <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+			      <div id="validationServer03Feedback" class="invalid-feedback">
+			        Please provide a valid city.
+			      </div>
+			    </div>
+
+			   <div class="custom-control custom-switch">
+				  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+				  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+			   </div>
+			</form>
+
+	</div>
+</div>
+
+<script src="jquery.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+</body>
+</html>
